@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640">
+    <title>中秋贺卡</title>
+    <style>
+        @keyframes k1 {
+            0%{transform: translateX(-270px);}
+            100%{transform: translateX(0);}
+        }
+        @keyframes k2 {
+            0%{transform: translateY(-818px);}
+            100%{transform: translateY(0);}
+        }
+        @keyframes k3 {
+            0%{transform: translateY(860px);}
+            100%{transform: translateY(0);}
+        }
+        @keyframes k4 {
+            0%{transform: scale(1.3)}
+            100%{transform: scale(1)}
+        }
+        /*闪动*/
+        @keyframes k5 {
+            0%{opacity: 1}
+            50%{opacity: .5}
+            100%{opacity: 1;}
+        }
+        /*中秋飘起*/
+        @keyframes k6 {
+            0%{transform: translateY(520px) scale(0) ;opacity: .3;}
+            100%{transform:translateY(0) scale(1) ;opacity: 1; }
+        }
+        /*喜*/
+        @keyframes k7 {
+            0%{transform: scale(.1);opacity: .5;}
+            50%{transform: scale(1) translateX(0);opacity: 1;}
+            75%{transform:translateX(-242px) ;}
+            100%{transform:translateX(0);}
+        }
+        /*迎*/
+        @keyframes k8 {
+            0%{transform: translateX(318px) scale(.3) }
+            50%{transform:translateX(0) scale(1)}
+            75%{transform:translateX(280px) }
+            100%{transform: translateX(0)}
+        }
+        /*旋转*/
+        @keyframes k9 {
+            0%{transform: rotate(0)}
+            100%{transform: rotate(360deg)}
+        }
+        /*云*/
+        @keyframes k10 {
+            0%{transform:translateX(-300px)}
+            100%{transform:translateX(480px)}
+
+        }
+        /*下云*/
+        @keyframes k11 {
+            0%{transform:translateX(0)}
+            50%{transform:translateX(-50px)}
+            100%{transform:translateX(0)}
+        }
+        /*灯笼*/
+        @keyframes k12 {
+            0%{transform: translateY(0);}
+            50%{transform: translateY(20px);}
+            100%{transform: translateY(0);}
+        }
+        /*荷花*/
+        @keyframes k13 {
+            0%{transform: translateX(0);}
+            50%{transform: translateX(20px);}
+            100%{transform: translateX(0);}
+        }
+
+        @keyframes k14 {
+            0%{transform: translateX(-108px);}
+            100%{transform: translateX(0);}
+        }
+        /*文字*/
+        @keyframes k15 {
+            0%{transform: translateY(40px) scale(0);opacity: .3;}
+            100%{transform: translateY(0) scale(1);opacity: 1;}
+
+        }
+        *{margin: 0;padding: 0;}
+        .main{width: 640px;height: 1008px;background: url("10.png");background-size:640px ;
+            margin: auto;overflow: hidden;position: relative;}
+        .img1{position: absolute;top: -27px;left: -11px;z-index: 3;animation: k1 4s backwards; }
+        .img2{position: absolute;opacity: .5;top:-2px ;left:-10px;z-index: 3;
+        animation: k1 3s backwards;}
+
+        .img3{position: absolute;top: -52px;right: 62px;z-index: 3;animation: k2 5s 10s backwards,k12 4s 17s  infinite;}
+        .img4{position: absolute;top: -24px;right: 10px;z-index: 3;animation: k2 5s 10.4s backwards,k12 4s 17.4s forwards infinite;}
+        .img5{position: absolute;top: -40px;right:153px;z-index: 3;animation: k2 5s  10.6s backwards,k12 4s 17.6s forwards infinite;}
+
+        .img6{width:640px;position: absolute;top:110px;left: 80px;z-index: 5;animation: k6 6s 8s backwards;}
+        .img7{position: absolute;top:400px;left: 242px;z-index: 4;animation:k7 8s 5s backwards}
+        .img8{position: absolute;top:424px;left: 320px;z-index: 5;animation:k8 8s 5s backwards}
+        .img9{width:640px;position: absolute;top:612px;text-align: center;z-index: 6;animation: k6 6s 8s backwards;}
+        .img10{position: absolute;top:440px;left: 44px;z-index: 3;animation: k3 2s 5s backwards}
+        .img11{position: absolute;top:164px;right: 30px;z-index: 3;animation: k2 2s 5s backwards}
+        .img12{position: absolute;top:603px;left: -176px;z-index: 4;animation: k3 4s  backwards}
+        .img13{position: absolute;top:600px;left: 58px;z-index: 3;animation: k3 6s ,k9 20s 6s infinite linear}
+        .img14{width:640px;position: absolute;text-align: center;z-index: 0;animation: k2 5s  backwards}
+        /*白点*/
+        .img15{width:640px;position: absolute;text-align: center;z-index: 2;animation:k4 2s 2s backwards,k5 2s 4s infinite backwards}
+        .img16{width:640px;position: absolute;text-align: center;z-index: 2;animation:k4 2s 2s backwards,k5 2s 4s infinite backwards}
+        .img17{width:640px;position: absolute;text-align: center;z-index: 2;transform: scale(1,1.3);
+            animation:k2 13s   }
+        .img18{width:640px;position: absolute;text-align: center;z-index: 8;transform: scale(1,1.3)}
+        .img19{position: absolute;z-index: 4;top: 130px;left:140px;animation: k10 20s linear infinite;}
+        .img20{position: absolute; z-index: 4;top: 360px;right: 120px;animation:k8 8s 5s backwards,k11 10s 13s linear infinite;}
+        .img21{position: absolute; z-index: 4;bottom: -30px;left: 0px;animation:k14 4s 3s backwards, k13 4s 6s infinite;}
+        .img22{position: absolute; z-index: 5;top: 30px;left: 0px;}
+        .img22 .img22_1{position: relative;animation: k1 4s backwards;}
+        .img22 .img22_1 .a1{position: absolute; z-index: 5;top: -30px;left: 0px; }
+        .img22 .img22_1 .a2{position: absolute; z-index: 5;top: -20px;left: 44px;}
+        .img22 .img22_1 .a3{position: absolute; z-index: 5;top: 64px;left: 80px;}
+        .img22 .img22_1 p{width: 16px;position: absolute; z-index: 5;top: 4px;left: 34px;color: white}
+        .img22 .img22_1 span{width: 16px;position: absolute; z-index: 5;top: 58px;left: 34px;color: white}
+        .text1 p{width:120px;text-align: center;color: white;font-size:22px;line-height: 40px;position: absolute;
+            z-index: 7;}
+        .text1 p:nth-child(1){top:530px;left:146px ;animation: k15 4s 12s backwards}
+        .text1 p:nth-child(2){top:530px;left:266px;animation: k15 4s 14s backwards}
+        .text1 p:nth-child(3){top:530px;left:384px;animation: k15 4s 16s backwards}
+        .text1 p:nth-child(4){top:570px;left:268px;animation: k15 4s 18s backwards}
+        .ying{position:absolute;right:16px;top:20px;z-index: 10;width: 80px;height: 80px;}
+        .ying2{position:absolute;right:40px;top:40px;z-index: 9;width: 44px;height: 44px;animation:k9 2s infinite linear}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="img1"><img src="5.png" alt=""></div>
+    <div class="img2"><img src="5.png" alt="" width="280" height="190"></div>
+    <div class="img3"><img src="9.png" alt="" ></div>
+    <div class="img4"><img src="9.png" alt="" width="40"></div>
+    <div class="img5"><img src="9.png" alt="" width="64"></div>
+
+    <div class="img6"><img src="3.png" alt=""></div>
+    <div class="img7"><img src="2.png" alt=""></div>
+    <div class="img8"><img src="1.png" alt=""></div>
+    <div class="text1"><p>祝福满中秋</p><p>花好月圆</p><p>阖家幸福</p><p>中秋节快乐</p></div>
+    <div class="img9"><img src="14.png" alt=""></div>
+
+    <div class="img10"><img src="7.png" alt=""></div>
+    <div class="img11"><img src="4.png" alt=""></div>
+    <div class="img12"><img src="8.png" alt=""></div>
+    <div class="img13"><img src="15.png" alt=""></div>
+    <div class="img14"><img src="13.png" alt=""></div>
+    <div class="img15"><img src="6.png" alt=""></div>
+    <div class="img16"><img src="12.png" alt=""></div>
+    <div class="img17"><img src="11.gif" alt=""></div>
+    <div class="img18"><img src="11.gif" alt=""></div>
+    <div class="img19"><img src="16.png" alt=""></div>
+    <div class="img20"><img src="17.png" alt=""></div>
+    <div class="img21"><img src="18.png" alt="" width="180"></div>
+    <div class="img22">
+        <div class="img22_1">
+            <img src=" 20.png" alt="" class="a1" width="26">
+            <img src="21.png" alt="" class="a2" width="58">
+            <img src="22.png" alt="" class="a3" width="48">
+            <p>作者</p><span>鲁康</span>
+        </div>
+    </div>
+    <div class="ying"><img src="ying.gif" alt=""></div>
+    <div class="ying2"><img src="ying2.png" alt=""></div>
+    <audio src="mm1.mp3" loop autoplay></audio>
+</div>
+<script>
+    var Aoi=document.getElementsByTagName("audio")[0];
+    var Bop=document.getElementsByClassName("ying2")[0];
+    var Img=document.getElementsByClassName("ying")[0];
+    var i=0;
+    Img.onclick=function () {
+        if(i==0){
+            Aoi.pause();
+            i=1;
+            Bop.style.animation="none";
+            Img.style.opacity="0";
+        }
+        else{
+            Aoi.play();
+            i=0;
+            Bop.style.animation="k9 2s infinite linear";
+            Img.style.opacity="1";
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;font-family: "微软雅黑"}
+ul{list-style: none;}
+a{text-decoration:none;}
+img{border: none;vertical-align: bottom;}
+header{width: 100%;min-width: 1200px;height: 84px;background: rgb(235, 234, 234);border-bottom:1px solid rgb(167, 165, 165);overflow: hidden;position: relative; }
+.nav{position: absolute;width: 1440px;height: 84px;left: 50%;;margin-left:-720px ;text-align: center;}
+.logo{padding-left:110px;float: left; }
+.nav ul{width: 684px;height: 84px;line-height: 84px;display: inline-block;}
+.nav ul li{float: left;margin: 0 35px;cursor: pointer;box-sizing: border-box;height: 84px;padding-right:20px; transition: .2s;}
+.nav ul li a{color: rgb(58, 57, 57);font-size: 18px;position: relative;}
+.nav ul li a::after{content: "";width: 0;height: 0;border: 6px solid;position: absolute;right: -20px;top: 6px;border-color:rgb(78, 78, 78) transparent transparent transparent }
+.nav ul li:hover a::after{border-top-color:rgb(209, 169, 21);transform: rotate(180deg);transform-origin: 6px 3px;transition:.2s}
+.nav ul li:hover{border-bottom:5px solid rgb(209, 169, 21);}
+.shijia{float: right;height: 84px;line-height: 84px;margin-right:110px; }
+.shijia img{vertical-align:middle;}
+.benner{width: 100%;height: 450px;overflow: hidden;position: relative;}
+.bennerbg{width: 1440px;height: 450px;background: url("../image/11.jpg") no-repeat;position: absolute;left: 50%;margin-left:-720px; }
+.bennerbg p{width:1440px;height: 50px;background: rgba(0, 0, 0, 0.7);position: absolute;bottom:0;text-align: center;line-height: 50px;user-select: none;}
+.bennerbg p span{display:inline-block;width: 14px;height: 14px;background: rgb(138, 137, 137);border-radius:50%; margin:0 8px; cursor: pointer;vertical-align: middle; }
+.bennerbg p span:hover{border: 2px solid rgb(255, 196, 0);background: none;margin:0 6px}
+.benner2{width: 100%;height: 238px;position:relative;overflow:hidden;}
+.benner2cen{width: 1440px;height: 238px;position: absolute;left: 50%;margin-left:-720px; }
+.benner2cen .left{display: inline-block;width: 32px;height: 48px;background: url("../image/12.png")no-repeat;transform: rotateY(180deg);position: absolute;
+left: 94px;top:50%;margin-top:-24px;cursor: pointer; }
+.benner2cen .right{display: inline-block;width: 32px;height: 48px;background: url("../image/12.png")no-repeat;position: absolute;
+    right: 94px;top:50%;margin-top:-24px;cursor: pointer; }
+.center{width: 1008px;height: 238px;margin: auto;padding-top:50px;box-sizing: border-box;user-select: none;text-align: center }
+.center ul li{float: left;width: 252px;position: relative;}
+.center ul{height: 160px;width: 1008px;}
+.center ul li img{transform: scale(.8);transition: .3s}
+.center ul li img:hover{transform: scale(1)}
+.center ul li p{position: absolute;text-align: center;width: 100%;top:120px}
+.center ul li p span{font-size: 18px;}
+.center ul li p i{font-style: normal;margin-left:20px;font-size: 12px; }
+.center ul li p b{font-style: normal;font-size: 12px;}
+.center div{width: 8px;height: 8px;border-radius: 50%;background: rgb(102, 99, 99);display: inline-block;margin: 0 4px;cursor: pointer;}
+.center div:hover{background: rgb(209, 169, 21);}
+.content{width: 100%;height: 224px;background: rgb(231, 229, 229);box-sizing: border-box;padding: 50px 0;}
+.content h3{width: 1200px;margin: auto;font-size:24px;font-weight: bold;text-align: center;padding-bottom:40px ; }
+.content div{width: 870px;margin: auto;overflow: hidden;}
+.content div span{width: 306px;height: 40px;display: block;
+    border: 1px solid rgb(83, 83, 83);float: left;border-right:none;background: white;line-height: 38px;padding: 0 8px;box-sizing: border-box; font-size: 14px}
+.content div i{width: 40px; height: 40px;display: block;background:rgb(83, 83, 83);float: left;margin-right:20px;position: relative; }
+.content div i::after{content: "";width: 0;height: 0;border: 8px solid;position: absolute;right: 12px;top: 16px;border-color:white transparent transparent transparent }
+.content div button{width: 130px;height: 40px;background:rgb(209, 169, 21);border: none ;cursor: pointer;}
+.foot{width: 100%;height: 276px;background: white;border-bottom:1px solid rgb(170, 169, 169) }
+.cont{width: 1200px;height: 276px;margin:auto;}
+.cont div{float: left;width: 200px;text-align: center;height: 276px;padding-top:28px;box-sizing: border-box; }
+.cont div h3{color: rgb(66, 66, 66);padding-bottom:6px; }
+.cont div li{line-height: 34px;}
+.cont div li a{font-size: 12px;color: rgb(77, 76, 76);}
+.cont div li a:hover{text-decoration:underline; }
+.cont div li a b{color: rgb(221, 7, 7);font-style:italic ;}
+.rit1,.rit2{width: 400px;height: 138px;float: left;text-align: center;}
+.rit1{line-height: 134px}
+.rit1 span{margin: 0 17px;}
+.rit2{line-height: 70px}
+.rit2 span{margin: 0 15px;}
+.foot2{width: 100%;height: 130px;background: white;}
+.fcont{width: 1200px;height: 130px;margin: auto;}
+.fcont div:nth-of-type(1){width: 850px;height: 130px;padding-top:28px;box-sizing: border-box;float: left;  }
+.fcont div:nth-of-type(1) span{color: rgb(99, 97, 97);}
+.fcont div:nth-of-type(1) a{color: rgb(99, 97, 97);}
+.fcont div:nth-of-type(1) p{font-size:14px;line-height: 30px;color: rgb(99, 97, 97); }
+.fcont div:nth-of-type(1) p:last-of-type{font-size:12px;}
+.fcont div:nth-of-type(1) p:last-of-type img{width:14px;vertical-align: middle;margin: 0 4px;}
+.fcont div:nth-of-type(1) p:nth-of-type(2) span:nth-of-type(2){margin-left:70px; }
+.fcont div:nth-of-type(1) a:hover{text-decoration:underline}
+.fcont div:nth-of-type(1) p:last-of-type .fd{padding-right:40px; }
+.fcont div:nth-of-type(2){width: 350px;height: 130px;float: left;text-align: center;line-height: 90px;}

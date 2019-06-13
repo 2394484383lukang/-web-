@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=640">
+    <title>圣诞贺卡</title>
+    <style>
+
+        *{margin: 0;padding: 0;}
+        body{background: #000000;}
+        @keyframes k1 {
+            0%{transform: translateY(-308px);}
+            100%{transform: translateY(0);}
+        }
+        @keyframes k2 {
+            0%{transform: scale(0);}
+          100%{transform:scale(1);}
+        }
+@keyframes  k3{
+    0%{transform: scale(1,1)}
+    50%{ transform: scale(.7,.7)}
+    100%{transform: scale(1,1)}
+}
+@keyframes k4 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes k5 {
+    0%{transform: translate(-105px,200px)}
+    100%{ transform: translate(0,0)}
+}
+        @keyframes k6 {
+            0%{transform: translate(105px,200px)}
+            100%{ transform: translate(0,0)}
+        }
+  @keyframes k7 {
+      0%{transform: scale(0);}
+      20%{transform: scale(1.5);}
+      45%{transform: scale(1.1,1.1);}
+      55%{transform: scale(1.2,1.2);}
+      75%{transform: scale(.95,.95);}
+      100%{transform: scale(1);}
+     
+  }
+  @keyframes k8 {
+      0%{}
+      100%{transform: rotateZ(360deg);}
+  }
+.main{width: 640px;height: 1139px;margin: auto;position: relative;background: #000000;overflow: hidden;}
+.img1{position: absolute;top: 0;left: 15px;z-index: 2;animation: k1 1s backwards;}
+        .img2{position: absolute;top: 0;left: 0;z-index: 3;animation: k1 1s  1s backwards;}
+        .img3{position: absolute;top: 0;right: 0;z-index: 4;animation: k1 1s  1s backwards;}
+        .img4{position: absolute;top: 284px;left: 0;z-index: 5;animation:k4 1s 1s backwards}
+        .img5{position: absolute;top: 284px;right: 0;z-index: 6;animation:k4 1s 1s backwards}
+        .img6{position: absolute;bottom:-3px;left: 0;z-index: 7;animation:k5 1.2s 1s backwards}
+        .img7{position: absolute;bottom: -3px;;right: 0;z-index: 8;animation:k6 1.2s 1s backwards}
+        .img8{position: absolute;top: 0;left:-190px;z-index: 1;animation: k2 2s 1s backwards}
+        .img9{position: absolute;bottom: -20px;left:190px;z-index: 2;
+            animation: k2 2s 2s backwards}
+        .img9 img{border-radius: 50% 50% 0 0;}
+        .img10{position: absolute;top: 320px;left:200px;z-index: 9;}
+        .img111{position: absolute;top: 300px;left:110px;z-index: 10;animation: k7 1.2s 1s ease-out backwards}
+        .img11{position: absolute;top: 510px;left:10px;z-index: 10;animation: k2 2s
+        backwards}
+        .img12{position: absolute;top: 0;right:0;z-index: 2;}
+        .img13{position: absolute;top: 0;left:0;z-index: 2;}
+        .img14{position: absolute;top: 120px;left:60px;z-index: 2;animation: k2 1s 2.4s backwards,k3 2.5s 3.6s infinite }
+        .img15{position: absolute;top: 20px;left:35px;z-index: 2;animation: k2 1s 2.4s backwards,k3 2.3s 3.6s infinite}
+        .img16{position: absolute;top: 130px;right:70px;z-index: 2;animation: k2 1s 2.2s backwards,k3 2.2s 3.4s infinite}
+        .img17{position: absolute;top: 20px;right:40px;z-index: 2;animation: k2 1s 2.2s backwards,k3 2.7s 3.4s infinite}
+        .img18{position: absolute;top: 220px;left:0;z-index: 2;animation: k2 1s 2s backwards,k3 3s 2.5s infinite}
+        .img19{position: absolute;top: 220px;right:0;z-index: 2;animation: k2 1s 2s backwards,k3 3s 2.4s infinite}
+        .img20{width: 44px;height:44px;position: absolute;z-index: 21;top:25px;
+            background: url("卡片素材/images/music_off_8d94020.png");text-align: center;
+            right: 30px;animation: k8 1s linear infinite;}
+        .img21{ width: 80px;height:80px;position: absolute;z-index: 99;right: 0;}
+        .img22{width:640px;position: absolute;bottom: 200px;right:0;z-index: 10;text-align: center;
+            font-size: 40px;color: rgb(217,152,52);font-weight: bold;}
+        audio{position: absolute;z-index: 9;}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="img1"><img src="卡片素材/images/1.png" alt=""></div>
+    <div class="img2"><img src="卡片素材/images/2.png" alt=""></div>
+    <div class="img3"><img src="卡片素材/images/3.png" alt=""></div>
+    <div class="img4"><img src="卡片素材/images/4.png" alt=""></div>
+    <div class="img5"><img src="卡片素材/images/5.png" alt=""></div>
+    <div class="img6"><img src="卡片素材/images/6.png" alt=""></div>
+    <div class="img7"><img src="卡片素材/images/7.png" alt=""></div>
+    <div class="img8"><img src="卡片素材/images/8.gif" alt="" width="1000"></div>
+    <div class="img9"><img src="卡片素材/images/9.gif" alt="" width="250px;"></div>
+    <div class="img10"><img src="卡片素材/images/10.png" alt=""></div>
+    <div class="img111"><img src="卡片素材/images/111.png" alt=""></div>
+    <div class="img11"><img src="卡片素材/images/11.png" alt=""></div>
+    <div class="img12"><img src="卡片素材/images/12.png" alt=""></div>
+    <div class="img13"><img src="卡片素材/images/13.png" alt=""></div>
+    <div class="img14"><img src="卡片素材/images/14.png" alt=""></div>
+    <div class="img15"><img src="卡片素材/images/14.png" alt=""></div>
+    <div class="img16"><img src="卡片素材/images/14.png" alt=""></div>
+    <div class="img17"><img src="卡片素材/images/14.png" alt=""></div>
+    <div class="img18"><img src="卡片素材/images/16.png" alt=""></div>
+    <div class="img19"><img src="卡片素材/images/17.png" alt=""></div>
+    <div class="img20"></div>
+    <div class="img21"><img src="卡片素材/images/music_c0fda01.gif" alt=""></div>
+    <div class="img22"><p>祝大家圣诞快乐！</p></div>
+    <audio src="卡片素材/images/2290.mp3" autoplay loop></audio>
+</div>
+<script>
+    var Aoi=document.getElementsByTagName("audio")[0];
+    var Bop=document.getElementsByClassName("img20")[0];
+    var Img=document.getElementsByClassName("img21")[0];
+    var i=0;
+    Img.onclick=function () {
+        if(i==0){
+            Aoi.pause();
+            i=1;
+            Bop.style.animation="none";
+        }
+        else{
+            Aoi.play();
+            i=0;
+            Bop.style.animation="k8 1s linear infinite";
+        }
+        }
+        </script>
+</body>
+</html>

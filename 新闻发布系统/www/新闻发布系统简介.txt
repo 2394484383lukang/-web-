@@ -1,0 +1,6 @@
+news文件夹问项目文件夹
+通过Apach服务器访问
+默认为前台首页
+地址栏输入http://localhost/news/backend/login.php进入后台管理系统登陆界面
+用户名：admin  
+密码：666666

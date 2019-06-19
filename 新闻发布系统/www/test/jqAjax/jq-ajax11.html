@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>8点击发送ajax请求加载html文件</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $.ajaxSetup({
+            type:"post",
+            url:"10.php",
+        });
+        $(function(){
+            $("button").eq(0).click(function(){
+                $.ajax({
+                    data:"name=lc",
+                    success:function(data)
+                    {
+                        alert(data);
+                    }
+                });
+            });
+            $("button").eq(1).click(function(){
+                $.ajax({
+                   data:"name=zs",
+                   success:function(data)
+                   {
+                        console.log(data);
+                   }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>10点击发送ajax请求加载文件</button>
+    <button>10点击发送ajax请求加载文件</button>
+</body>
+</html>

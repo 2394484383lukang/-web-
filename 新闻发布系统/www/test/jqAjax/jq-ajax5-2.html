@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div{width: 200px;height: 200px;background:red;}
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $.getScript("jquery.color.js",function(){
+                     $("div").click(function(){
+                        $(this).animate({'background-color':'blue'},1000,'linear');
+                    })
+                });
+            });
+           
+        });
+    </script>
+</head>
+<body>
+    <button>加载颜色变化的插件</button>
+    <div></div>
+</body>
+</html>

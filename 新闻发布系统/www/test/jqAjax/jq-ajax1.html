@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        //$(function(){})//这句可以不写
+        $.get("1.txt",function(data,textstatus,jqxhr){
+            //alert(textstatus);
+            //alert(jqxhr.status);
+            //alert(jqxhr.statusText);
+            alert(data);
+        })
+    </script>
+</head>
+<body>
+    test
+</body>
+</html>

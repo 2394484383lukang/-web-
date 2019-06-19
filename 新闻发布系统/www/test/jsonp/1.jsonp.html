@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 
+        jsonp
+        json  with  padding
+        用别人网站里的json数据来填充我们自己的网页
+
+        实现步骤
+            1.先在自己要拿数据的页面定义一个函数并且写上参数，该参数就是我们要拿的数据
+            2.根据需求，动态创建一个script标签，添加一个src属性，给这个src属性设置一个属性值，该属性值就应该是jsonp的接口
+     -->
+
+</head>
+<body>
+    <input type="text" id="text1">
+    <div id="div"></div>
+    <script>
+            var oText=document.getElementById("text1");
+            var oDiv=document.getElementById("div");
+            function baidu(data)
+            {
+               for(var i=0; i<data.s.length; i++)
+               {
+                   /* oDiv.innerHTML+="<a href='https://www.baidu.com/s?wd="+data.s[i]+"'>"+data.s[i]+"</a><br>"; */
+
+                   oDiv.innerHTML+="<a href='https://www.baidu.com/s?wd="+data.s[i]+"'>"+data.s[i]+"</a><br>";
+               }
+               console.log(data);
+            }
+            oText.onkeyup=function()
+            {
+                oDiv.innerHTML="";
+                var value=oText.value;
+                var oScript=document.createElement("script");
+                oScript.src="https://www.baidu.com/su?wd="+value+"&cb=baidu";
+                document.body.appendChild(oScript);
+                document.body.removeChild(oScript);
+            }
+    </script>
+<a href=""></a>
+</body>
+</html>

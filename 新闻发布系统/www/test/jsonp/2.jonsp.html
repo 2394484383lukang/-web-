@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#text").keyup(function(){
+                var value=$("#text").val();
+                $.ajax({
+                    type:"post",
+                    //url:"https://www.baidu.com/su?wd="+value+"&cb=web",
+                    url:"https://www.baidu.com/su?wd="+value,
+                    dataType:"jsonp",
+                    success:function(data,textStatus,jqxhr)
+                    {
+                        for(var i=0; i<data.s.length; i++)
+                        {
+                            $("#div").get(0).innerHTML+=data.s[i]+"<br>";
+                        }
+                        console.log(data);
+                    },
+                    jsonpCallback:"web",
+                    jsonp:"cb"
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text" id="text">
+    <div id="div"></div>
+</body>
+</html>
